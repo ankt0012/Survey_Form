@@ -12,10 +12,4 @@ function feedback(){
     }
 }
 
-function feedbackback(){
-    if(document.getElementById('yes').onselectionchange ){
-        likeYes.setAttribute("style", "display : none");
-    }else if(document.getElementById('no').onselectionchange) {
-        likeNo.setAttribute("style", "display : none");
-    }
-}
+

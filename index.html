@@ -14,26 +14,27 @@
    
         
         <div class="container">
-            <form action="https://www.google.com" method="post">
+            <form action="https://formspree.io/f/xaykzdog"
+            method="POST">
                 <div>
                     <h1>Survey Form</h1>
                     <p>Thank you for taking time to filling this form. it will help me to know about me more.</p>
                 </div>
                 <div>
                     <div><label for="name">What is your name?</label></div>
-                    <input id="name" type="text" placeholder="Enter your name" required>
+                    <input id="name" name="Name" type="text" placeholder="Enter your name" required>
                 </div>
                 <div>
                     <div><label for="city">Where are you living?</label></div>
-                    <input id="city" type="text" placeholder="Enter your city name" required>
+                    <input id="city" name="city" type="text" placeholder="Enter your city name" required>
                 </div>
                 <div class="age-block">
                     <div><label for="age"></label>What is your age (optional)</label></div>
-                    <input id="age" type="text" placeholder="Enter your Age(In years)">
+                    <input id="age" name="age" type="number" placeholder="Enter your Age(In years)">
                 </div>
                 <div class="select-class">
                     <div><label for="role">Which option best describe your relationship with Ankit?</label></div>
-                    <select id="relation" required>
+                    <select name="relation" id="relation" required>
                         <option value="">Select your relation with Ankit</option>
                         <option value="Friend">Friend</option>
                         <option value="Close Friend">Close Friend</option>
@@ -47,22 +48,20 @@
                 </div>
                 <div class="feedback">
                     <div>Do you like Ankit?</div>
-                    <label for="yes"><input class="feedback-radio" type="radio" onclick="feedback()" id="yes" name="Like" value="yes" onchange="feedbackback()">Yes</label>
-                    <label for="no"><input class="feedback-radio" type="radio" id="no" name="Like" onclick="feedback()" value="no" onchange="feedbackback()">No</label>
+                    <label for="yes"><input class="feedback-radio" type="radio" onclick="feedback()" id="yes" name="Like" value="Yes" >Yes</label>
+                    <label for="no"><input class="feedback-radio" type="radio" id="no" name="Like" onclick="feedback()" value="No">No</label>
                 </div>
-                
-                    <div class="like-yes" style="display: none;">
-                        <ledend>What do you likes in Ankit?</ledend>
-                        <textarea minlength="3" maxlength="300" placeholder="Write here"></textarea>
-                    </div>
-                
-                <div class="like-no" style="display: none;">
+                <div class="like-yes" >
+                    <ledend>What do you likes in Ankit?</ledend>
+                    <textarea minlength="3" mame="LikeBecauseOf" maxlength="300" placeholder="Write here"></textarea>
+                </div>
+                <div class="like-no" >
                     <ledend>What do you not likes in Ankit?</ledend>
-                    <textarea minlength="3" maxlength="300" placeholder="Write here"></textarea>
+                    <textarea minlength="3" name="NotLikeBecauseOf" maxlength="300" placeholder="Write here"></textarea>
                 </div>
                 <div id="suggestion">
                     <div>Give some suggestion to Ankit (optional)</div>
-                    <textarea minlength="3" maxlength="300" placeholder="This is optional but i would love to know suggestion about me."></textarea>
+                    <textarea minlength="3" name="suggestion" maxlength="300" placeholder="This is optional but i would love to know suggestion about me."></textarea>
                 </div>
 
                 <button type="submit" class="btn">Submit</button>

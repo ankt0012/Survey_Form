@@ -99,3 +99,9 @@ input[type="file"] {
 textarea{
     height: 10vh;
 }
+.like-yes{
+    display: none;
+}
+.like-no{
+    display: none;
+}
