@@ -2,8 +2,7 @@ const feedbackElement = document.querySelectorAll(".feedback-radio");
 const likeYes = document.querySelector(".like-yes");
 const likeNo = document.querySelector(".like-no");
 // console.log(feedbackElement);
-const res = document.getElementById('yes').checked;
-console.log(res);
+
 
 function feedback(){
     if(document.getElementById('yes').checked) {
