@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./index.css">
+    <Script src="./index.js" defer></Script>
+</head>
+
+<body>
+   
+        
+        <div class="container">
+            <form action="https://www.google.com" method="post">
+                <div>
+                    <h1>Survey Form</h1>
+                    <p>Thank you for taking time to filling this form. it will help me to know about me more.</p>
+                </div>
+                <div>
+                    <div><label for="name">What is your name?</label></div>
+                    <input id="name" type="text" placeholder="Enter your name" required>
+                </div>
+                <div>
+                    <div><label for="city">Where are you living?</label></div>
+                    <input id="city" type="text" placeholder="Enter your city name" required>
+                </div>
+                <div class="age-block">
+                    <div><label for="age"></label>What is your age (optional)</label></div>
+                    <input id="age" type="text" placeholder="Enter your Age(In years)">
+                </div>
+                <div class="select-class">
+                    <div><label for="role">Which option best describe your relationship with Ankit?</label></div>
+                    <select id="relation" required>
+                        <option value="">Select your relation with Ankit</option>
+                        <option value="Friend">Friend</option>
+                        <option value="Close Friend">Close Friend</option>
+                        <option value="Best Friend">Best Friend</option>
+                        <option value="Brother">Brother</option>
+                        <option value="Sister">Sister</option>
+                        <option value="Girlfriend">Girlfriend</option>
+                        <option value="Prefer not to say">Prefer not to say</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="feedback">
+                    <div>Do you like Ankit?</div>
+                    <label for="yes"><input class="feedback-radio" type="radio" onclick="feedback()" id="yes" name="Like" value="yes" onchange="feedbackback()">Yes</label>
+                    <label for="no"><input class="feedback-radio" type="radio" id="no" name="Like" onclick="feedback()" value="no" onchange="feedbackback()">No</label>
+                </div>
+                
+                    <div class="like-yes" style="display: none;">
+                        <ledend>What do you likes in Ankit?</ledend>
+                        <textarea minlength="3" maxlength="300" placeholder="Write here"></textarea>
+                    </div>
+                
+                <div class="like-no" style="display: none;">
+                    <ledend>What do you not likes in Ankit?</ledend>
+                    <textarea minlength="3" maxlength="300" placeholder="Write here"></textarea>
+                </div>
+                <div id="suggestion">
+                    <div>Give some suggestion to Ankit (optional)</div>
+                    <textarea minlength="3" maxlength="300" placeholder="This is optional but i would love to know suggestion about me."></textarea>
+                </div>
+
+                <button type="submit" class="btn">Submit</button>
+
+            </form>
+            
+        </div>
+        <div></div>
+    
+    
+</body>
+
+</html>
